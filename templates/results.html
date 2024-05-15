@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<table>
+<tr>
+<th>Date Submitted</th>
+<th>Report Number</th>
+<th>Amount Claimed</th>
+<th>Patient Name</th>
+<th>Treatment Type</th>
+</tr>
+{% for data in data %}
+<tr>
+<td>{{ data[0] }}</td>
+<td>{{ data[1] }}</td>
+<td>{{ data[2] }}</td>
+<td>{{ data[3] }}</td>
+<td>{{ data[4] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
+
